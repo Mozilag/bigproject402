@@ -1,5 +1,5 @@
 import { assert } from "chai";
-import RestfulAPI from "../pages/herokuapp.api";
+import RestfulAPI from "$root/pages/herokuapp.api";
 
 describe('As a User, i be able to Ping', () => {
     it('Should Successfully Ping the API', async() =>{
