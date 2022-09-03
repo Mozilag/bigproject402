@@ -1,3 +1,7 @@
+//Prefix
+//HERO_ For Herokuapps
+//SIM_ For Simplebooks
+
 export const VALID_LOGIN = {
     "username" : "admin",
     "password" : "password123"
