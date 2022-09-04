@@ -2,9 +2,8 @@ import chai, { assert, expect } from "chai";
 import jsonSchema from 'chai-json-schema';
 import herokuappAPI from "$root/pages/herokuapp.api";
 import * as data from "$root/data/auth.data";
-import * as schema from "$root/schema/auth.schema";
+import * as schema from "$root/schema/herokuApp/auth.schema";
 
-chai.use(jsonSchema)
 
 describe ('As a guest, I want to login using valid username & password', ()=>{
     it('Should have succesfully received the token', async() => {
