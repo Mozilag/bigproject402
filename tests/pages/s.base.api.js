@@ -5,7 +5,7 @@ import querystring from 'querystring';
 dotenv.config();
 
 const BaseAPI = axios.create({
-    baseURL: process.env.BASE_URL,
+    baseURL: process.env.BASE_URL_SIMPLE,
     headers:{
         "content-type": "application/x-www-form-urlencoded",
         "accept": "application/json"
@@ -21,4 +21,3 @@ const BaseAPI = axios.create({
 });
 
 export default BaseAPI;
-

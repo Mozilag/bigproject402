@@ -1,4 +1,4 @@
-const VALID_BOOKING_SCHEMA = {
+export const VALID_BOOKING_SCHEMA = {
     "type": "object",
     "properties": {
         "firstname": {
@@ -30,6 +30,23 @@ const VALID_BOOKING_SCHEMA = {
         },
         "additionalneeds": {
             "type": "string"
+        }
+    }
+}
+
+
+export const VALID_BOOKING_LIST_SCHEMA = {
+    "type": "array",
+    "default": [],
+    "items": {
+        "type": "object",
+        "required": [
+            "bookingid"
+        ],
+        "properties": {
+            "bookingid": {
+                "type": "integer"
+            }
         }
     }
 }
