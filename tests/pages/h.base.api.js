@@ -20,6 +20,10 @@ const BaseAPI = axios.create({
     }
 });
 
+<<<<<<< HEAD
 export default BaseAPI;
 
 
+=======
+export default BaseAPI;
+>>>>>>> 99a9021ab42a0c790e6b7ad201d78a870c0518a2
