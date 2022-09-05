@@ -2,7 +2,7 @@ import chai, { assert, expect } from "chai";
 import jsonSchema from 'chai-json-schema';
 import heroappAPI from "$root/pages/herokuapp.api";
 import * as data from "$root/data/booking.data";
-import getAuthToken from '$root/helper/herokuapp/get-auth-token.api';
+import getAuthToken from '$root/helper/herokuapp/get-auth-token';
 // import * as schema from "$root/schema/auth.schema";
 
 chai.use(jsonSchema)
