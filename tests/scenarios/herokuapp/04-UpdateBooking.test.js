@@ -14,7 +14,7 @@ describe('As a guest, I want to update a booking', ()=> {
         const response = await heroappAPI.update_booking(data.VALID_UPDATE, userToken);
 
          assert.equal(response.status, 200);
-         expect(response.data).to.be.jsonSchema(schema.VALID_UPDATE);
+         expect(response.data).to.be.jsonSchema(schema.VALID_UPDATE_SCHEMA);
 
         console.log(userToken)
         console.log(response.data)

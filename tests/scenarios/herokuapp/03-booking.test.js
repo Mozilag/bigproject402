@@ -53,7 +53,7 @@ describe('As a user I want to create booking', () => {
     });
 });
 
-describe.only('As a user I want to create booking', () => {
+describe('As a user I want to create booking', () => {
     it('Should not be success with invalid input value', async() => {
         const respone = await herokuappAPI.booking_post(data.EMPTY_BOOKING);
         
