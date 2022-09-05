@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 export const VALID_CREATE_BOOKING_SCHEMA = {
+=======
+export const VALID_BOOKING_SCHEMA = {
+>>>>>>> kristian-branch
     "type": "object",
     "properties": {
         "firstname": {
@@ -34,8 +38,15 @@ export const VALID_CREATE_BOOKING_SCHEMA = {
     }
 }
 
+<<<<<<< HEAD
 export const VALID_GET_BOOKING_SCHEMA = {
     "type": "array",
+=======
+
+export const VALID_BOOKING_LIST_SCHEMA = {
+    "type": "array",
+    "default": [],
+>>>>>>> kristian-branch
     "items": {
         "type": "object",
         "required": [

@@ -10,6 +10,11 @@ const simpleappAPI = {
 
 
     auth_post: (data) => BaseAPI.post('/auth', data),
+<<<<<<< HEAD
+=======
+
+    orders_get: () => BaseAPI.get('/orders'),
+>>>>>>> kristian-branch
     
 }
 
