@@ -58,5 +58,5 @@ describe('As a user I want to create booking', () => {
         const respone = await herokuappAPI.booking_post(data.EMPTY_BOOKING);
         
         assert.equal(respone.status, 400);
-    });
+    }); 
 });
