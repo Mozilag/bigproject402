@@ -4,6 +4,14 @@ import herokuappAPI from "$root/pages/herokuapp.api";
 import * as schema from "$root/schema/herokuApp/booking.schema";
 chai.use(jsonSchema);
 
+describe('As a User, I be Able to Get Booking', () => {
+    it('Should Successfully Get Booking List', async() =>{
+        const response = await herokuappAPI.booking_get();
+        assert.equal(response.status, 200);
+    })
+});
+
+
 describe('As a User, I be Able to Get Booking by ID', () => {
     it('Should Successfully Get Booking by ID', async() =>{
         const response = await herokuappAPI.booking_get_id();
