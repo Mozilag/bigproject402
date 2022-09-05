@@ -10,6 +10,18 @@ export const VALID_BOOKING = {
     "additionalneeds" : "Breakfast"
 }
 
+export const EMPTY_BOOKING = {
+    "firstname" : "",
+    "lastname" : "",
+    "totalprice" : 0,
+    "depositpaid" : 0,
+    "bookingdates" : {
+        "checkin" : "",
+        "checkout" : ""
+    },
+    "additionalneeds" : ""
+}
+
 export const VALID_UPDATE = {
     "firstname" : "James Bond",
     "lastname" : "Brown",

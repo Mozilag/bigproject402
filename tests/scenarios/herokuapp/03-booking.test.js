@@ -2,6 +2,7 @@ import chai, { assert, expect } from "chai";
 import jsonSchema from 'chai-json-schema';
 import herokuappAPI from "$root/pages/herokuapp.api";
 import * as schema from "$root/schema/herokuApp/booking.schema";
+import * as data from '$root/data/booking.data';
 chai.use(jsonSchema);
 
 describe('As a User, I be Able to Get Booking', () => {
@@ -41,4 +42,21 @@ describe('As a User, I be Able to Get Booking by Invalid ID', () => {
         assert.equal(response.status, 404);
 
     })
+});
+
+describe('As a user I want to create booking', () => {
+    it('Should be successfully with valid input value', async() => {
+        const response = await herokuappAPI.booking_post(data.VALID_BOOKING);
+
+        assert.equal(response.status, 200);
+        // expect(response.data).to.be.jsonSchema(schema.VALID_BOOKING_SCHEMA)
+    });
+});
+
+describe.only('As a user I want to create booking', () => {
+    it('Should not be success with invalid input value', async() => {
+        const respone = await herokuappAPI.booking_post(data.EMPTY_BOOKING);
+        
+        assert.equal(respone.status, 400);
+    });
 });
