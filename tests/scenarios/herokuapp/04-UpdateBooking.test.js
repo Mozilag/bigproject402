@@ -13,7 +13,7 @@ describe.only('As a guest, I want to update a booking', ()=>{
 
         const response = await heroappAPI.update_booking(data.VALID_UPDATE, userToken);
 
-        // assert.equal(response.status, 200);
+        assert.equal(response.status, 200);
 
         console.log(userToken)
         console.log(response.data)
