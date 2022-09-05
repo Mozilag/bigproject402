@@ -7,13 +7,13 @@ import getAuthToken from '$root/helper/herokuapp/get-auth-token';
 
 chai.use(jsonSchema)
 
-describe.only('As a guest, I want to update a booking', ()=>{
+describe('As a guest, I want to update a booking', ()=> {
     it('Should have succesfully update the books', async() => {
         const userToken = await getAuthToken();
 
         const response = await heroappAPI.update_booking(data.VALID_UPDATE, userToken);
 
-        assert.equal(response.status, 200);
+         assert.equal(response.status, 200);
 
         console.log(userToken)
         console.log(response.data)
