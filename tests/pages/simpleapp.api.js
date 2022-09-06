@@ -9,7 +9,7 @@ const simpleappAPI = {
     books_by_datanotfound_get: () => BaseAPI.get('/books/7'),
 
 
-    auth_post: (data) => BaseAPI.post('/auth', data),
+    auth_post: (data) => BaseAPI.post('/api-clients/', data),
 
     orders_get: () => BaseAPI.get('/orders'),
     

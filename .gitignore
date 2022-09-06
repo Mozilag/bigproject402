@@ -1,7 +1,5 @@
 node_modules
 reports
-.mocharc.json
-package.json
 yarn-error.log
 yarn.lock
 .env

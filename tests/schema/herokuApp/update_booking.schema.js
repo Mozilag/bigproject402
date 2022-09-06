@@ -1,7 +1,5 @@
-export const VALID_BOOKING_SCHEMA = 
+export const VALID_UPDATE_SCHEMA = 
     {
-        "$schema": "https://json-schema.org/draft/2019-09/schema",
-        "$id": "http://example.com/example.json",
         "type": "object",
         "default": {},
         "title": "Root Schema",
@@ -71,30 +69,12 @@ export const VALID_BOOKING_SCHEMA =
                             "2019-01-01"
                         ]
                     }
-                },
-                "examples": [{
-                    "checkin": "2018-01-01",
-                    "checkout": "2019-01-01"
-                }]
+                }
             },
             "additionalneeds": {
                 "type": "string",
                 "default": "",
-                "title": "The additionalneeds Schema",
-                "examples": [
-                    "Breakfast"
-                ]
+                "title": "The additionalneeds Schema"
             }
         },
-        "examples": [{
-            "firstname": "James",
-            "lastname": "Brown",
-            "totalprice": 111,
-            "depositpaid": true,
-            "bookingdates": {
-                "checkin": "2018-01-01",
-                "checkout": "2019-01-01"
-            },
-            "additionalneeds": "Breakfast"
-        }]
     }
