@@ -8,7 +8,7 @@ import * as schema from "$root/schema/herokuApp/update_booking.schema";
 chai.use(jsonSchema)
 
 describe('As a guest, I want to update a booking', ()=> {
-    it.only('Should have succesfully update the books', async() => {
+    it('Should have succesfully update the books', async() => {
         const userToken = await getAuthToken();
 
         const response = await heroappAPI.update_booking(data.VALID_UPDATE, userToken);
