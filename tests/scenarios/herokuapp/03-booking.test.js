@@ -35,14 +35,14 @@ describe('As a User, I be able to acces all booking flow', () => {
 
     })
 
-    it.only('Should be successfully with valid input value', async() => {
+    it.skip('Should be successfully with valid input value', async() => {
         const response = await herokuappAPI.booking_post(data.VALID_BOOKING);
 
         assert.equal(response.status, 200);
         // expect(response.data).to.be.jsonSchema(schema.VALID_BOOKING_SCHEMA)
     });
     
-    it('Should not be success with invalid input value', async() => {
+    it.skip('Should not be success with invalid input value', async() => {
         const respone = await herokuappAPI.booking_post(data.EMPTY_BOOKING);
         
         assert.equal(respone.status, 400);
